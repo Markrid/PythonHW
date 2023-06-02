@@ -9,13 +9,12 @@ m = int(input("Введите количество элементов второ
 print("Через ENTER введите значания элементов первого набора")
 for i in range(n):
     sp_1.append(int(input()))
-print("Через ENTER введите значания элементов первого набора")
+print("Через ENTER введите значания элементов второго набора")
 for n in range(m):
     sp_2.append(int(input()))
 
 print(f"Вы ввели два набора: 1 - {sp_1} \n \t \t     2 - {sp_2}")
-sp_1.sort()
-sp_2.sort()
-result_1 = set(sp_1)
-result_2 = set(sp_2)
-print(f"Результат: 1 - {result_1} \n \t   2 - {result_2}")
+temp = sp_1 + sp_2
+temp.sort()
+result = set(temp)
+print(f"Результат: {result}")
