@@ -11,4 +11,13 @@
 
 word = input("Введите слово: ").upper()
 dic_ru = {1: "АВЕИНОРСТAEIOULNSTR", 2: "ДКЛМПУDG", 3: "БГЁЬЯBCMP", 4: "ЙЫFHVWY", 5: "ЖЗХЦЧK", 8: "ШЭЮJX", 10: "ФЩЪQZ"}
-print(f'Очков: {sum([k for i in word for k, v in dic_ru.items() if i in v])}')
+
+# print(f'Очков: {sum([k for i in word for k, v in dic_ru.items() if i in v])}')
+sum = 0
+
+for i in word:
+    for k, v in dic_ru.items():
+        if i in v:
+            sum += k
+print(sum) 
+

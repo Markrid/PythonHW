@@ -7,4 +7,4 @@ def summa(number1 , number2):
     return summa(number1+1, number2-1)
 
 
-print(summa(2,5))
+print(summa(0,10))
